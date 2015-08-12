@@ -24,8 +24,10 @@ public class GivenArrayOfIntsMoveAllNonZerosToLeftAndZerosToRight {
                    solution[N--] = element;
                 }
             }
+            return solution;
+        } else {
+            return input;
         }
-        return solution;
     }
 
 }

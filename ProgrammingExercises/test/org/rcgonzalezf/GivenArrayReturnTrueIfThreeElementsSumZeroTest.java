@@ -59,6 +59,14 @@ public class GivenArrayReturnTrueIfThreeElementsSumZeroTest {
         givenArrayWithAValidMatch();
         whenSolutionMethodIsCalled();
         shouldReturn(true);
+
+        givenTheFollowingInput(new int[]{-1, -1, 2});
+        whenSolutionMethodIsCalled();
+        shouldReturn(true);
+    }
+
+    private void givenTheFollowingInput(int[] input) {
+        this.input = input;
     }
 
     private void givenArrayWithAValidMatch() {

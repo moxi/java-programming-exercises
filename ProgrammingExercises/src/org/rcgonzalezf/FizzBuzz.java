@@ -20,7 +20,10 @@ public class FizzBuzz {
             if (value.length() <= 0) {
                 value.append(i);
                 result.add(value.toString());
+            } else {
+                result.add(value.toString());
             }
+
             value.setLength(0);
         }
         return result;

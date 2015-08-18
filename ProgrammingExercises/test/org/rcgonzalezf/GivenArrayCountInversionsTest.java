@@ -1,6 +1,5 @@
 package org.rcgonzalezf;
 
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -26,14 +25,14 @@ public class GivenArrayCountInversionsTest {
 
     @Test
     public void shouldReturnThreeForSampleArray() throws Exception {
-        givenInputArray(new int[]{1, 3,5,2,4, 6});
+        givenInputArray(new int[]{1, 3, 5, 2, 4, 6});
         whenCountInversions();
         thenShouldBeInversionEqualsTo(3);
     }
 
     @Test
     public void shouldReturn15ForEntirelyUnsortedArrayOfSixEntries() throws Exception {
-        givenInputArray(new int[]{6, 5,4, 3,2,1});
+        givenInputArray(new int[]{6, 5, 4, 3, 2, 1});
         whenCountInversions();
         thenShouldBeInversionEqualsTo(15);
     }

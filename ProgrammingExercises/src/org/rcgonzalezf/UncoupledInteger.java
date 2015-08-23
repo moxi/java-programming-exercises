@@ -7,20 +7,6 @@ import java.util.Iterator;
 
 public class UncoupledInteger {
 
-    public static void main(String... args) {
-        UncoupledInteger finder = new UncoupledInteger();
-
-        int[] sample = new int[]{1,2,1,5,6,3,1,4,5,1,
-                                  6,3,2,4,2};
-
-        int result = finder.getUncoupledIntegerUsingXor(sample);
-        System.out.println("result 2 is " +  result);
-
-        result = finder.getUncoupledIntegerUsingSet(sample);
-        System.out.println("result 2 is " + result );
-
-    }
-
     public int getUncoupledIntegerUsingXor(int[] input) {
         int mask = 0;
         for(int element : input) {
@@ -40,8 +26,7 @@ public class UncoupledInteger {
             }
         }
 
-        int uncoupled = getUncoupled(uncoupledSet);
-        return uncoupled;
+        return getUncoupled(uncoupledSet);
     }
     
     private int getUncoupled(Set<Integer> uncoupledSet) {

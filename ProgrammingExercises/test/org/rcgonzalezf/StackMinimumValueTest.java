@@ -13,7 +13,8 @@ public class StackMinimumValueTest {
 
     @Before
     public void setUp() throws Exception {
-        instaceToTest = new StackMinimumValue<>(Integer.MAX_VALUE);
+        minimumValue = Integer.MAX_VALUE;
+        instaceToTest = new StackMinimumValue<>(minimumValue);
     }
 
     @Test
@@ -41,6 +42,13 @@ public class StackMinimumValueTest {
         whenPushingNewMinimumValue(5);
         whenGettingTheMinimumValue();
         thenValueShouldBeNewMinimumValue();
+    }
+
+    @Test
+    public void shouldReturnDefaultCreationValueForAnEmptyStack() throws Exception {
+        givenStackWithTheFollowingElements(new int[]{});
+        whenGettingTheMinimumValue();
+        thenValueShouldBe(minimumValue);
     }
 
     private void thenValueShouldBeNewMinimumValue() {

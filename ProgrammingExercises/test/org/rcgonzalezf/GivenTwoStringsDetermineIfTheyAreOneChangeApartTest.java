@@ -60,6 +60,13 @@ public class GivenTwoStringsDetermineIfTheyAreOneChangeApartTest {
         thenShouldOneEditApartShouldBe(false);
     }
 
+    @Test
+    public void shouldReturnFalseForASecondStringWithMoreThanTwoCharactersOfLength() throws Exception {
+        givenTwoString("ca", "carts");
+        whenCheckingIfTheyAreOneEditApart();
+        thenShouldOneEditApartShouldBe(false);
+    }
+
     private void thenShouldOneEditApartShouldBe(boolean expected) {
         assertEquals(expected, oneEditApart );
     }

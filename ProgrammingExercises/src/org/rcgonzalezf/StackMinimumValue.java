@@ -42,10 +42,6 @@ public class StackMinimumValue <T extends Integer> {
         }
     }
 
-    public boolean isEmpty() {
-        return stack.isEmpty();
-    }
-
     public T getMinimumValue() {
         return minimumValue;
     }

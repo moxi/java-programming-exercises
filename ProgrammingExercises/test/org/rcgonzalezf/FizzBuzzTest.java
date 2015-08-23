@@ -10,13 +10,13 @@ import static org.junit.Assert.assertEquals;
 
 public class FizzBuzzTest {
 
-    private FizzBuzz instaceToTest;
+    private FizzBuzz instanceToTest;
     private List<String> fizzBuzzList;
     private int n;
 
     @Before
     public void setUp() throws Exception {
-        instaceToTest = new FizzBuzz();
+        instanceToTest = new FizzBuzz();
     }
 
     @Test
@@ -59,7 +59,7 @@ public class FizzBuzzTest {
     }
 
     private void whenFizzBuzzIsCalled() {
-        fizzBuzzList = instaceToTest.fizzBuzz(n);
+        fizzBuzzList = instanceToTest.fizzBuzz(n);
     }
 
     private void givenInput(int n) {

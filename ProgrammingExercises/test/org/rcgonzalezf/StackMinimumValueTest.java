@@ -7,14 +7,14 @@ import static org.junit.Assert.assertEquals;
 
 public class StackMinimumValueTest {
 
-    private StackMinimumValue<Integer> instaceToTest;
+    private StackMinimumValue<Integer> instanceToTest;
     private int minimumValue;
     private int newMinimumValue;
 
     @Before
     public void setUp() throws Exception {
         minimumValue = Integer.MAX_VALUE;
-        instaceToTest = new StackMinimumValue<>(minimumValue);
+        instanceToTest = new StackMinimumValue<>(minimumValue);
     }
 
     @Test
@@ -57,11 +57,11 @@ public class StackMinimumValueTest {
 
     private void whenPushingNewMinimumValue(int newMinimumValue) {
         this.newMinimumValue = newMinimumValue;
-        instaceToTest.push(newMinimumValue);
+        instanceToTest.push(newMinimumValue);
     }
 
     private void whenPopTheMinimumValue() {
-        instaceToTest.pop();
+        instanceToTest.pop();
     }
 
     private void thenValueShouldBe(int expected) {
@@ -69,12 +69,12 @@ public class StackMinimumValueTest {
     }
 
     private void whenGettingTheMinimumValue() {
-        minimumValue = instaceToTest.getMinimumValue();
+        minimumValue = instanceToTest.getMinimumValue();
     }
 
     private void givenStackWithTheFollowingElements(int[] elementsToPush) {
         for(int e : elementsToPush) {
-            instaceToTest.push(e);
+            instanceToTest.push(e);
         }
     }
 }

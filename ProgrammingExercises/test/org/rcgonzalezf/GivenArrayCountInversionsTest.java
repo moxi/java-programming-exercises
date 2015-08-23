@@ -7,13 +7,13 @@ import static org.junit.Assert.*;
 
 public class GivenArrayCountInversionsTest {
 
-    private GivenArrayCountInversions instaceToTest;
+    private GivenArrayCountInversions instanceToTest;
     private int[] input;
     private int numberOfInversions;
 
     @Before
     public void setUp() throws Exception {
-        instaceToTest = new GivenArrayCountInversions();
+        instanceToTest = new GivenArrayCountInversions();
     }
 
     @Test
@@ -42,7 +42,7 @@ public class GivenArrayCountInversionsTest {
     }
 
     private void whenCountInversions() {
-        numberOfInversions = instaceToTest.solution(input);
+        numberOfInversions = instanceToTest.solution(input);
     }
 
     private void givenInputArray(int[] input) {

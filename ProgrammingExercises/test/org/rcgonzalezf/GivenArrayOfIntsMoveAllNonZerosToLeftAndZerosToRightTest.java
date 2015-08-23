@@ -9,12 +9,12 @@ import static org.junit.Assert.*;
 public class GivenArrayOfIntsMoveAllNonZerosToLeftAndZerosToRightTest {
 
     private int[] input;
-    private GivenArrayOfIntsMoveAllNonZerosToLeftAndZerosToRight instaceToTest;
+    private GivenArrayOfIntsMoveAllNonZerosToLeftAndZerosToRight instanceToTest;
     private int[] solution;
 
     @Before
     public void setUp() throws Exception {
-        instaceToTest = new GivenArrayOfIntsMoveAllNonZerosToLeftAndZerosToRight();
+        instanceToTest = new GivenArrayOfIntsMoveAllNonZerosToLeftAndZerosToRight();
     }
 
     @Test
@@ -45,7 +45,7 @@ public class GivenArrayOfIntsMoveAllNonZerosToLeftAndZerosToRightTest {
     }
 
     private void whenSolutionIsCalled() {
-        solution = instaceToTest.solution(input);
+        solution = instanceToTest.solution(input);
     }
 
     private void givenAnArrayAsInput(int[] input) {

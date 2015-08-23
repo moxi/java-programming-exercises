@@ -7,14 +7,14 @@ import static org.junit.Assert.assertEquals;
 
 public class RansomNoteTest {
 
-    private RansomNote instaceToTest;
+    private RansomNote instanceToTest;
     private String magazine;
     private String ransomNote;
     private boolean canCreateRansomNote;
 
     @Before
     public void setUp() throws Exception {
-        instaceToTest = new RansomNote();
+        instanceToTest = new RansomNote();
         magazine = "Hello gray hair , are you going to put color on your gray window ?";
     }
 
@@ -58,7 +58,7 @@ public class RansomNoteTest {
     }
 
     private void whenCheckingThatRansomNoteCanBeCreated() {
-        this.canCreateRansomNote = instaceToTest.canRansom(ransomNote, magazine);
+        this.canCreateRansomNote = instanceToTest.canRansom(ransomNote, magazine);
     }
 
     private void givenRansomNome(String ransomNote) {
